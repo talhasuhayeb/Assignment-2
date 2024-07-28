@@ -43,7 +43,11 @@
 .header {
   min-height: 80vh;
   width: 100%;
-  background-color: rgb(38, 38, 38);
+  background: linear-gradient(
+    90deg,
+    rgb(17, 17, 17),
+    rgba(0, 0, 0, 0.822) 100%
+  );
 }
 nav {
   display: flex;
@@ -230,7 +234,7 @@ nav .fa-bars {
 /* RUN SECTION */
 .run-div {
   display: flex;
-  background: rgb(38, 38, 38);
+  background: rgb(34, 34, 34);
   color: white;
   width: 80%;
   margin: auto;
@@ -311,7 +315,7 @@ nav .fa-bars {
 }
 .calculator-div {
   width: 100%;
-  background: rgb(38, 38, 38);
+  background: rgb(34, 34, 34);
   overflow: hidden;
 }
 .calculator-col {
@@ -371,16 +375,11 @@ tbody td {
 .form {
   width: 100%;
 }
-.form-style {
-  width: 100%;
-  padding: 18px;
-  background-color: rgb(54, 54, 54);
-  color: white;
-  border-radius: 10px;
-  border: none;
-  font-size: 1rem;
-  font-weight: 400;
-  color: gray;
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 34px;
 }
 .form-row-1 {
   display: flex;
@@ -390,16 +389,22 @@ tbody td {
   display: flex;
   gap: 12px;
 }
-.form-container {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  margin-bottom: 34px;
-}
+
 .input-5 {
   width: 100%;
   padding: 20px;
   background-color: rgb(54, 54, 54);
+  color: white;
+  border-radius: 10px;
+  border: none;
+  font-size: 1rem;
+  font-weight: 400;
+  color: gray;
+}
+.form-style {
+  width: 100%;
+  padding: 18px;
+  background-color: rgba(255, 255, 255, 0.1);
   color: white;
   border-radius: 10px;
   border: none;
@@ -421,6 +426,7 @@ tbody td {
     flex-direction: column;
     flex-wrap: wrap;
     padding-right: 30px;
+    margin-left: 20px;
   }
   table {
     width: 350px;
@@ -437,5 +443,75 @@ tbody td {
 
   .btn-div .btn-1 {
     width: 100%;
+  }
+}
+/* Team Section */
+.team {
+  background: black;
+}
+.team h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  margin-bottom: 14px;
+}
+.team p {
+  font-size: 0.875rem;
+  line-height: 24px;
+  color: gray;
+}
+.main {
+  display: flex;
+  justify-content: center;
+}
+
+.team-div {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 20px;
+  row-gap: 20px;
+  width: fit-content;
+  margin-top: 58px;
+  margin-bottom: 88px;
+  padding: 20px;
+  background-color: rgb(34, 34, 34);
+  border-radius: 20px;
+}
+.team-img-div {
+  position: relative;
+}
+.img_heading {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  text-align: left;
+}
+.trainer-img-style {
+  width: 330px;
+  height: 270px;
+  border-radius: 20px;
+  background: rgba(207, 52, 194, 0.247);
+}
+
+@media (max-width: 992px) {
+  .team-div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 20px;
+    width: fit-content;
+  }
+}
+@media (max-width: 576px) {
+  .team h1 {
+    font-size: 2rem;
+    font-weight: 900;
+    margin-bottom: 14px;
+  }
+  .team-div {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    gap: 20px;
+    width: fit-content;
   }
 }
