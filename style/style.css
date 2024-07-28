@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+@import url("https://fonts.cdnfonts.com/css/miama");
 * {
   font-family: "Inter", sans-serif;
   margin: 0;
@@ -94,6 +94,7 @@ nav .fa-bars {
 }
 .hero-div {
   display: flex;
+  gap: 20px;
 }
 .text-box {
   margin: 2% 6%;
@@ -106,8 +107,8 @@ nav .fa-bars {
   margin-bottom: 14px;
 }
 .shape {
-  font-family: "Great Vibes", cursive;
-  font-size: 7rem;
+  font-family: "Miama", sans-serif;
+  font-size: 8px4.875rem;
   font-weight: 900;
 }
 .text-box p {
@@ -124,13 +125,68 @@ nav .fa-bars {
   font-size: 1.125rem;
   padding: 16px 40px;
 }
+.header-img-div {
+  position: relative;
+  padding-left: 30px;
+}
 .hero-img {
+  display: flex;
   background-position: center;
   background-size: cover;
   width: fit-content;
 }
+.header-span {
+  position: absolute;
+  top: 150px;
+  left: 250px;
+  padding: 20px 23px;
+  width: max-content;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+}
+.header-span h3 {
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+.header-span p {
+  font-size: 1rem;
+  color: grey;
+}
+.header-span-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  position: absolute;
+  top: 410px;
+  right: 260px;
+  padding: 20px 23px;
+  width: max-content;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+}
+.round-div {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background: rgb(230, 83, 60);
+}
+.header-span-2 h3 {
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+.header-span-2 p {
+  font-size: 1rem;
+  color: grey;
+}
 
-@media (max-width: 676px) {
+@media (max-width: 576px) {
   .nav-link {
     display: none;
   }
@@ -163,10 +219,59 @@ nav .fa-bars {
     font-weight: 400;
     margin-bottom: 28px;
   }
-  .hero-img {
+  .header-img-div {
+    position: relative;
+    margin-left: 20px;
     margin: auto;
+  }
+  .hero-img {
+    margin: 0 auto;
+    display: flex;
     justify-content: center;
     justify-items: center;
+  }
+  .header-span {
+    position: absolute;
+    top: 40px;
+    left: 220px;
+    padding: 20px 23px;
+    width: max-content;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+  }
+  .header-span h3 {
+    color: white;
+    font-size: 1.875rem;
+    font-weight: 900;
+  }
+  .header-span p {
+    font-size: 0.625rem;
+    color: grey;
+  }
+  .header-span-2 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    top: 250px;
+    right: 160px;
+    padding: 20px 23px;
+    width: max-content;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+  }
+  .header-span-2 h3 {
+    color: white;
+    font-size: 1.875rem;
+    font-weight: 900;
+  }
+  .header-span-2 p {
+    font-size: 0.625rem;
+    color: grey;
   }
 }
 /* HABIT SECTION  */
@@ -212,7 +317,7 @@ nav .fa-bars {
   font-size: 0.875rem;
   line-height: normal;
 }
-@media (max-width: 676px) {
+@media (max-width: 576px) {
   .habit h1 {
     font-size: 2rem;
     font-weight: 900;
@@ -260,7 +365,7 @@ nav .fa-bars {
   padding: 20px;
 }
 
-@media (max-width: 676px) {
+@media (max-width: 576px) {
   .run-div {
     display: flex;
     flex-direction: column;
